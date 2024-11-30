@@ -29,14 +29,11 @@ const Sidebar = ({ onFilterChange }: SidebarProps) => {
                     <button
                         key={category.id}
                         onClick={() => handleFilterClick(category.id)}
-                        className="text-left font-medium hover:bg-gray_secondary flex flex-row items-center space-x-2"
-                    >
+                        className="text-left font-medium hover:bg-gray_secondary flex flex-row items-center space-x-2">
                         <div className={` ${category.color} rounded-full p-1 animate-pulse ms-10`}></div>
                         <span>{category.label}</span>
                     </button>
-                ),
-                ),
-                },
+                ))}
             </div>
         </div>
     );
